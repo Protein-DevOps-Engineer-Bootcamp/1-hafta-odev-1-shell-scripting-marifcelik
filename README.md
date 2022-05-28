@@ -24,9 +24,12 @@ Mail Ornegi:
 
 ![Alt text](example_ss/disk_alert.png?raw=True "Disk Alert Example")
 
+# Ödev Açıklamaları
 
+## Yedekleme Ödevi
 
+Yedekleme klasörünün içerisinde sh ve conf dosyaları mevcut. Script çalıştırıldığı anda kendini crontab' e ekliyor, eklenmişse de etkileşime giriyor. 
 
+## Alarm Ödevi
 
-
-
+Aynı şekilde, alert klasörü içerisinde sh ve conf dosyaları mevcut. Yedekleme scripti ile aynı mantıkta kontrol sağlıyor ve çalışıyor.
