@@ -13,6 +13,7 @@ run() {
                 part=$(echo $output | awk '{ print $2  }')            # partition adını alıyorum
                 # mesajı yazdırıp mail e aktarıyorum ve maili gönderiyorum
                 echo "The partition '$part' on $(hostname) has used %$rate at $(date)" | \
+                # sistemde mail smtp konfigürasyonlarının yapıldığını varsayıyorum
                 mail -s "$(hostname) disk usage alert: %$rate used" alert@mail.com
             fi
         done
